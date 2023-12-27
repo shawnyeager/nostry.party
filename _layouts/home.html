@@ -58,21 +58,21 @@ layout: default
     {% endif %}
     {% endif %}
   </div>
-  <div class="block">
-    {% if site.json.demo %}
-    {% assign demo = site.json.demo | split: "//" | slice: 1 %}
-    <p><span class="key">demo</span><span class="attr"><a href="{{ site.json.demo }}" target="_blank">{{ demo }}</a></span></p>
+  <!-- <div class="block">
+    {% if site.json.protocol %}
+    {% assign protocol = site.json.protocol | split: "//" | slice: 1 %}
+    <p><span class="key">protocol</span><span class="attr"><a href="{{ site.json.protocol }}" target="_blank">{{ protocol }}</a></span></p>
     {% endif %}
-    {% if site.json.source %}
-    {% assign source = site.json.source | split: "github.com/" | slice: 1 %}
-    <p><span class="key">source</span><span class="attr"><a href="{{ site.json.source }}" target="_blank">{{ source }}</a></span></p>
+    {% if site.json.documentary %}
+    {% assign documentary = site.json.documentary | split: "//" | slice: 1 %}
+    <p><span class="key">documentary</span><span class="attr"><a href="{{ site.json.documentary }}" target="_blank">{{ documentary }}</a></span></p>
     {% endif %}
-  </div>
+  </div> -->
   <div class="block">
-    {% if site.json.profiles %}
-    <span class="array-key">profiles</span>
+    {% if site.json.protocol %}
+    <span class="array-key">protocol</span>
     <div class="array">
-      {% for i in site.json.profiles %}
+      {% for i in site.json.protocol %}
       <p class="array-attr"><a href="{{ i | slice: 1 }}" target="_blank">{{ i | slice: 0 }}</a></p>
       {% endfor %}
     </div>
