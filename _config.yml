@@ -14,7 +14,7 @@ json:
     - This tiny website
     - Hosts nostr addresses
   contact:
-    nostr: npub1clk6vc9xhjp8q5cws262wuf2eh4zuvwupft03hy4ttqqnm7e0jrq3upup9
+    nostr: hello@nostr.party
     email: hello@nostr.party
   protocol:
     about: https://nostr.com
