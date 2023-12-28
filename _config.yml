@@ -25,7 +25,8 @@ exclude:
   - README.md
 
 include:
-  - .well-known
+  - .well-known/
+  - _redirects
 
 plugins:
   - jekyll-seo-tag
